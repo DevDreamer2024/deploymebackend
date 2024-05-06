@@ -4,7 +4,7 @@ const fetch = require('node-fetch');
 
 /* GET users listing. */
 router.get('/' , (req,res) => {
-  res.json({ year : new Date().getFullYear() });
+  res.json({ year : new Date().getFullYear().toString() });
 });
 
 module.exports = router;
